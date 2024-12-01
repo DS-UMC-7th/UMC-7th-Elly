@@ -8,7 +8,10 @@ import com.umc.study.repository.MemberRepository.MemberRepository;
 import com.umc.study.repository.ReviewRepository.ReviewRepository;
 import com.umc.study.repository.StoreRepository.StoreRepository;
 import com.umc.study.web.dto.ReviewRequest;
+import com.umc.study.web.dto.ReviewResponse;
 import lombok.RequiredArgsConstructor;
+import org.springframework.data.domain.Page;
+import org.springframework.data.domain.PageRequest;
 import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Transactional;
 

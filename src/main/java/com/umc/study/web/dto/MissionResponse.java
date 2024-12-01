@@ -1,14 +1,15 @@
 package com.umc.study.web.dto;
 
-import lombok.Data;
+import lombok.Builder;
+import lombok.Getter;
 
-import java.time.LocalDate;
-
-@Data
+@Getter
+@Builder
 public class MissionResponse {
-    Long id;
-    Integer reward;
-    LocalDate deadline;
-    String missionSpec;
-    Long storeId;
+    private Long id;
+    private Long storeId;
+    private String missionSpec;
+    private String deadline;
+    private Integer reward;
+    private String status; // 추가: 상태 (진행 중, 완료 등)
 }

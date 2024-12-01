@@ -60,4 +60,3 @@ public class MissionRepositoryImpl implements MissionRepositoryCustom {
         return region.id.eq(regionId);
     }
 }
-
